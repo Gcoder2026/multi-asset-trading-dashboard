@@ -1,0 +1,10 @@
+# Core MVP — no API key required
+pandas>=2.0
+numpy>=1.24
+yfinance>=0.2.40
+plotly>=5.18
+streamlit>=1.30
+
+# Optional: Gemini LLM commentary module
+google-generativeai>=0.7
+python-dotenv>=1.0

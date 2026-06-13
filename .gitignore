@@ -1,0 +1,22 @@
+# Secrets — never commit API keys
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Outputs: keep README screenshots, ignore other generated files
+outputs/screenshots/*
+!outputs/screenshots/.gitkeep
+!outputs/screenshots/*.png
