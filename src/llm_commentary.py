@@ -155,11 +155,13 @@ def generate_signal_commentary(prompt: str, model_name: str | None = None) -> st
         return NO_KEY_MESSAGE
 
     try:
-        import google.generativeai as genai
+        from google import genai
 
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel(model_name or DEFAULT_MODEL)
-        response = model.generate_content(prompt)
+        client = genai.Client(api_key=api_key)
+        response = client.models.generate_content(
+            model=model_name or DEFAULT_MODEL,
+            contents=prompt,
+        )
         text = (getattr(response, "text", "") or "").strip()
         if not text:
             return "The Gemini API returned an empty response. Please try again."
