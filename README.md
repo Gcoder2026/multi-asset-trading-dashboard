@@ -202,15 +202,6 @@ Backtest Results, Portfolio Analysis, AI Commentary, Methodology.**
 - Exportable AI commentary (Markdown / PDF) and alternate prompt styles.
 - Unit tests and an optional Dockerfile.
 
-## CV bullet point
-
-> Built a Python and Streamlit-based LLM-enhanced multi-asset backtesting dashboard covering
-> ETFs, large-cap technology stocks and crypto assets. Implemented buy/sell/hold signal
-> generation, moving-average and momentum strategies, benchmark comparison, transaction cost
-> assumptions, and risk metrics including Sharpe ratio, volatility and maximum drawdown. Added
-> an optional Gemini API module to generate research-style explanations of rule-based signals
-> and model limitations.
-
 ## Disclaimer
 
 This project is for **learning, research, and portfolio demonstration only**. It is **not** a
